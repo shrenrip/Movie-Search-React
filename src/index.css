@@ -100,12 +100,32 @@ body{
   border-radius: 6px;
 }
 
-.alternativeMovieCard .title{
+.alternativeMovieCard .title, .mainMovieCard .title{
   font-weight: 600;
   margin-top: 6px;
 }
 
-.alternativeMovieCard .meta{
+.alternativeMovieCard .meta, .mainMovieCard .meta{
   font-size: 13px;
   color: #999;
+}
+
+.noPoster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #999;
+  border-radius: 6px;
+}
+
+.alternativeMovieCard .noPoster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+}
+
+.mainMovieCard .noPoster {
+  width: 200px;
+  height: 300px;
+  flex-shrink: 0;
 }
